@@ -1,10 +1,8 @@
 """A pickleable wrapper for sharing NumPy ndarrays between processes using POSIX shared memory."""
 
-import posix_ipc
+
 
 from .shared_ndarray import SharedNDArray
-
-SharedNDArrayError = posix_ipc.Error
 
 __all__ = ['SharedNDArray', 'SharedNDArrayError']
 
